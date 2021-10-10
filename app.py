@@ -14,7 +14,7 @@ st.markdown("""
     **Note:** If you don't see the "User Selection" sidebar, please press the `>` icon on the top left side of your screen.
     
     """)
-st.image('.\iris.png')
+
 
 st.subheader("""
 This app predicts the **Iris flower** type!
