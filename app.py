@@ -15,7 +15,7 @@ st.markdown("""
     **Note:** If you don't see the "User Selection" sidebar, please press the `>` icon on the top left side of your screen.
     
     """)
-img = Image.open('.\iris.png')
+img = Image.open('https://miro.medium.com/max/1000/1*lFC_U5j_Y8IXF4Ga87KNVg.png')
 st.image(img)
 
 st.subheader("""
