@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from PIL import Image
 
 st.title("Simple Iris Flower Prediction App")
     
@@ -14,7 +15,8 @@ st.markdown("""
     **Note:** If you don't see the "User Selection" sidebar, please press the `>` icon on the top left side of your screen.
     
     """)
-st.image('.\iris.png')
+img = Image.open('.\iris.png')
+st.image(img)
 
 st.subheader("""
 This app predicts the **Iris flower** type!
@@ -69,7 +71,7 @@ st.header(f'Credits')
 st.markdown("""
     **Thank you for using my application!**
     
-    The dataset is often used in data mining, classification and clustering examples and to test algorithms.[Iris Dataset](https://data.covid19india.org/).
+    The dataset is often used in data mining, classification and clustering examples and to test algorithms.[Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris).
     
     This application uses the Streamlit package library. You can learn more about me and my other projects by visiting [my Github Repo] (https://github.com/Ankitg028).    
     """)
