@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from PIL import Image
 
 st.title("Simple Iris Flower Prediction App")
     
@@ -15,8 +14,8 @@ st.markdown("""
     **Note:** If you don't see the "User Selection" sidebar, please press the `>` icon on the top left side of your screen.
     
     """)
-img = Image.open('https://miro.medium.com/max/1000/1*lFC_U5j_Y8IXF4Ga87KNVg.png')
-st.image(img)
+
+st.image('https://miro.medium.com/max/1000/1*lFC_U5j_Y8IXF4Ga87KNVg.png')
 
 st.subheader("""
 This app predicts the **Iris flower** type!
